@@ -1,5 +1,6 @@
 import CustomClasses from './components/CustomClasses/CustomClasses'
 import HeaderCustom from './components/HeaderCustom/HeaderCustom'
+import FooterCustom from './components/FooterCustom/FooterCustom'
 import Text from './components/Text/Text'
 import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
@@ -39,14 +40,17 @@ MapTo('vue/components/checkbox')(CheckBox, EditConfig)
 // Header Component Mapping
 MapTo('vue/components/header')(Header, EditConfig)
 
-// Header Component Mapping
+// HeaderCustom Component Mapping
 MapTo('vue/components/header-custom')(HeaderCustom, EditConfig)
 
-// Header Component Mapping
+// Main Component Mapping
 MapTo('vue/components/main')(Main, EditConfig)
 
 // Footer Component Mapping
 MapTo('vue/components/footer')(Footer, EditConfig)
+
+// FooterCustom Component Mapping
+MapTo('vue/components/footer-custom')(FooterCustom, EditConfig)
 
 // Image Component Mapping
 MapTo('vue/components/image')(Image, {
