@@ -4,6 +4,7 @@ import FooterCustom from './components/FooterCustom/FooterCustom'
 import TitleCustom from './components/TitleCustom/TitleCustom'
 import TextCustom from './components/TextCustom/TextCustom'
 import ButtonCustom from './components/ButtonCustom/ButtonCustom'
+import ImageCustom from './components/ImageCustom/ImageCustom'
 import Text from './components/Text/Text'
 import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
@@ -63,6 +64,15 @@ MapTo('vue/components/text-custom')(TextCustom, EditConfig)
 
 // ButtonCustom Component Mapping
 MapTo('vue/components/button-custom')(ButtonCustom, EditConfig)
+
+// ImageCustom Component Mapping
+MapTo('vue/components/image-custom')(ImageCustom, {
+  emptyLabel: 'Image',
+  isEmpty: function (props) {
+    return !props || !props.src || props.src.trim().length < 1
+  },
+  resourceType: 'vue/components/image-custom'
+})
 
 // Image Component Mapping
 MapTo('vue/components/image')(Image, {
