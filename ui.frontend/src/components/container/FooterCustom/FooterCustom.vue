@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>created by {{txt}} - {{companyName}}</p>
+        <p :style="{ 'font-family': fontFamily}">created by {{txt}} - {{companyName}}</p>
     </footer>
 </template>
 
@@ -13,6 +13,9 @@ export default {
       type: String
     },
     companyName: {
+      type: String
+    },
+    fontFamily: {
       type: String
     }
   }

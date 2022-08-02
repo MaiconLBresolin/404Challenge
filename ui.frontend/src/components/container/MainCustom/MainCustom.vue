@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import ImageCustom from '@/components/ImageCustom/ImageCustom'
-import TitleCustom from '@/components/TitleCustom/TitleCustom'
-import TextCustom from '@/components/TextCustom/TextCustom'
-import ButtonCustom from '@/components/ButtonCustom/ButtonCustom'
+import ImageCustom from '@/components/micro/ImageCustom/ImageCustom'
+import TitleCustom from '@/components/micro/TitleCustom/TitleCustom'
+import TextCustom from '@/components/micro/TextCustom/TextCustom'
+import ButtonCustom from '@/components/micro/ButtonCustom/ButtonCustom'
 
 export default {
   name: 'MainCustom',

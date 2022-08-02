@@ -1,5 +1,5 @@
 <template>
-    <button>{{txtButton}}</button>
+    <button :style="{ 'font-family': fontFamily}">{{txtButton}}</button>
 </template>
 
 <script>
@@ -7,6 +7,9 @@ export default {
   name: 'ButtonCustom',
   props: {
     txtButton: {
+      type: String
+    },
+    fontFamily: {
       type: String
     }
   }

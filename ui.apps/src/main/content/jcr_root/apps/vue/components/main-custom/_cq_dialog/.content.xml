@@ -52,6 +52,12 @@
                             <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
                                 <items jcr:primaryType="nt:unstructured">
                                     <textButton jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Digite a mensagem do botão" name="./btnText"/>
+                                    <fontFamilyButton cq-msm-lockable="./btnFont" defaultValue="Space Mono" fieldLabel="Escolha uma fonte para o texto:" jcr:primaryType="nt:unstructured" name="./btnFont" sling:resourceType="granite/ui/components/coral/foundation/form/select" value="false">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                                            <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                                            <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                                        </items>
                                 </items>
                             </column>
                         </items>
