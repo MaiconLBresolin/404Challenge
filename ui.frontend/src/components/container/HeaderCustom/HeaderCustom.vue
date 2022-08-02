@@ -1,5 +1,7 @@
 <template>
-    <header>{{ txt }}</header>
+    <header>
+      <p :style="{ 'font-family': fontFamily}">{{ txt }}</p>
+    </header>
 </template>
 
 <script>
@@ -8,14 +10,17 @@ export default {
   props: {
     txt: {
       type: String
+    },
+    fontFamily: {
+      type: String
     }
   }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
-header {
+p {
     font-family: Inconsolata;
     font-size: 24px;
     line-height: 25px;
