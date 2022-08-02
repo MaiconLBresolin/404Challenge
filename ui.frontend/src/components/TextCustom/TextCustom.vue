@@ -1,12 +1,15 @@
 <template>
-    <p> {{text}} </p>
+    <p :style="{ 'font-family': fontFamily}"> {{txtMsg}} </p>
 </template>
 
 <script>
 export default {
   name: 'TextCustom',
   props: {
-    text: {
+    txtMsg: {
+      type: String
+    },
+    fontFamily: {
       type: String
     }
   }

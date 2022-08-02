@@ -1,12 +1,15 @@
 <template>
-    <img :src="src" />
+    <img :src="srcImg" :alt="imgDesc"/>
 </template>
 
 <script>
 export default {
   name: 'ImageCustom',
   props: {
-    src: {
+    srcImg: {
+      type: String
+    },
+    imgDesc: {
       type: String
     }
   }

@@ -16,6 +16,11 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Digite o nome de Usuário"
                         name="./txt"/>
+                    <company
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Digite o nome da empresa"
+                        name="./companyName"/>
                 </items>
             </column>
         </items>
