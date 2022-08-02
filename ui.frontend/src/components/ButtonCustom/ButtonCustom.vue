@@ -1,12 +1,12 @@
 <template>
-    <button>{{text}}</button>
+    <button>{{txtButton}}</button>
 </template>
 
 <script>
 export default {
   name: 'ButtonCustom',
   props: {
-    text: {
+    txtButton: {
       type: String
     }
   }
@@ -21,7 +21,7 @@ button{
     font-weight: 700;
     color: #ffffff;
     width: 216px;
-    height: 50px;
+    height: 60px;
     background: #333333;
 }
 </style>

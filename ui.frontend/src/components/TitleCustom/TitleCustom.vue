@@ -1,12 +1,15 @@
 <template>
-    <h1> {{text}} </h1>
+    <h1 :style="{ 'font-family': fontFamily}"> {{titleTxt}} </h1>
 </template>
 
 <script>
 export default {
   name: 'TitleCustom',
   props: {
-    text: {
+    titleTxt: {
+      type: String
+    },
+    fontFamily: {
       type: String
     }
   }

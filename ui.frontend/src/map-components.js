@@ -5,6 +5,7 @@ import TitleCustom from './components/TitleCustom/TitleCustom'
 import TextCustom from './components/TextCustom/TextCustom'
 import ButtonCustom from './components/ButtonCustom/ButtonCustom'
 import ImageCustom from './components/ImageCustom/ImageCustom'
+import MainCustom from './components/MainCustom/MainCustom'
 import Text from './components/Text/Text'
 import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
@@ -64,6 +65,9 @@ MapTo('vue/components/text-custom')(TextCustom, EditConfig)
 
 // ButtonCustom Component Mapping
 MapTo('vue/components/button-custom')(ButtonCustom, EditConfig)
+
+// MainCustom Component Mapping
+MapTo('vue/components/main-custom')(MainCustom, EditConfig)
 
 // ImageCustom Component Mapping
 MapTo('vue/components/image-custom')(ImageCustom, {

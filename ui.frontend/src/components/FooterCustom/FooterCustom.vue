@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>created by {{txt}} - devChallenges.io</p>
+        <p>created by {{txt}} - {{companyName}}</p>
     </footer>
 </template>
 
@@ -10,6 +10,9 @@ export default {
   name: 'FooterCustom',
   props: {
     txt: {
+      type: String
+    },
+    companyName: {
       type: String
     }
   }
@@ -22,8 +25,8 @@ footer{
     align-content: center;
     text-align: center;
     font-family: Montserrat;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 20px;
     color: #bdbdbd
 }
 </style>
